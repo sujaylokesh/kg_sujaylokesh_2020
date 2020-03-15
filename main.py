@@ -1,4 +1,6 @@
 import sys
+from collections import defaultdict
+
 def main(s1,s2):
     """#Approach 1
         #counting unique values in s1
@@ -14,7 +16,6 @@ def main(s1,s2):
     #approach 2
     s1 = str(s1).lower()
     s2 = str(s1).lower()
-    from collections import defaultdict
     df=defaultdict(list)
     for i in range(0,len(s1)):
         df[s1[i]].append(s2[i])
